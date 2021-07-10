@@ -1,10 +1,19 @@
-const Todo = ({ todo }) => {
-    return (
-        <div>
-            <input type="checkbox" checked={todo.complete} />
-            {todo.name}
-        </div>
-    );
-};
+export default function Todo({ todo, toggleTodo }) {
+  function handleTodoClick() {
+    toggleTodo(todo.id);
+  }
 
-export default Todo;
+  return (
+    <div>
+      <label>
+        <input
+          className="check-box"
+          type="checkbox"
+          checked={todo.complete}
+          onChange={handleTodoClick}
+        />
+        {todo.name}
+      </label>
+    </div>
+  );
+}

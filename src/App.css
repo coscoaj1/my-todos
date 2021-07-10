@@ -1,0 +1,25 @@
+body {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.25rem;
+}
+
+.container {
+  height: 80%;
+  margin: 0 auto;
+}
+
+.input-box {
+  width: 250px;
+  height: 25px;
+  font-size: 1.25rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+  width: 50px;
+  padding: 5px;
+  width: 150px;
+}
